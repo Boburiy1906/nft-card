@@ -1,0 +1,50 @@
+/* outfit-300 - latin */
+@font-face {
+	font-family: 'Outfit';
+	font-style: normal;
+	font-weight: 300;
+	src: local(''),
+		url('../fonts/outfit-v6-latin-300.woff2') format('woff2'),
+		url('../fonts/outfit-v6-latin-300.woff') format('woff');
+	font-display: swap;
+}
+
+/* outfit-600 - latin */
+@font-face {
+	font-family: 'Outfit';
+	font-style: normal;
+	font-weight: 600;
+	src: local(''),
+		url('../fonts/outfit-v6-latin-600.woff2') format('woff2'),
+		url('../fonts/outfit-v6-latin-600.woff') format('woff');
+	font-display: swap;
+}
+
+/* outfit-regular - latin */
+@font-face {
+	font-family: 'Outfit';
+	font-style: normal;
+	font-weight: 400;
+	src: local(''),
+		url('../fonts/outfit-v6-latin-regular.woff2') format('woff2'),
+		url('../fonts/outfit-v6-latin-regular.woff') format('woff');
+	font-display: swap;
+}
+
+h5{
+@include font(16px, 20px, 400, $color-soft-blue);
+margin-top: 0;
+
+@include responsive(tablet_1){
+	@include font(15px, 19px, 400, $color-soft-blue);
+}
+
+@include responsive(mobile){
+	@include font(13px, 17px, 400, $color-soft-blue);
+}
+}
+
+p{
+@include font(18px, 26px, 300, $color-soft-blue);
+margin-bottom: 0;
+}
